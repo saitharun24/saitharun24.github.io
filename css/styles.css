@@ -11630,13 +11630,48 @@ body {
   margin-bottom: 5rem;
 }
 
+.achievements-section {
+  padding: 5rem 0;
+}
+.achievements-section .featured-text {
+  padding: 2rem;
+}
+
+.courses-section {
+  padding: 4rem 0;
+}
+.courses-section .featured-text {
+  padding: 2rem;
+}
+
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 .projects-section .featured-text {
   padding: 2rem;
 }
+
 @media (min-width: 992px) {
+ .achievements-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+.achievements-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+ .courses-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+.courses-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
@@ -11647,6 +11682,24 @@ body {
   font-size: 90%;
 }
 @media (min-width: 992px) {
+  .achievements-section .project-text {
+    padding: 5rem;
+  }
+  .achievements-section .project-text hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+
+    .courses-section .project-text {
+    padding: 5rem;
+  }
+  .courses-section .project-text hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+
   .projects-section .project-text {
     padding: 5rem;
   }
@@ -11714,5 +11767,30 @@ body {
 }
 
 .footer {
-  padding: 3rem 0;
+  padding: 3rem 0 0.55rem;
+}
+
+#heart img{
+  margin: 0px 2px 3px 2px;
+ }
+
+ @keyframes heartFadeInOut {
+  0% {transform: scale(1);}
+  25% {transform: scale(.97);}
+  35% {transform: scale(.9);}
+  45% {transform: scale(1.1);}
+  55% {transform: scale(.9);}
+  65% {transform: scale(1.1);}
+  75% {transform: scale(1.03);}
+  100% {transform: scale(1);}
+}
+
+#heart img.bottom { 
+  animation-name: heartFadeInOut; 
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+#emoji {
+ margin-bottom: 3px;
 }
