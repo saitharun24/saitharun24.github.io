@@ -11640,6 +11640,10 @@ body {
   padding: 2rem;
 }
 
+a > div:hover {
+  transform: scale(1.02);
+}
+
 @media (min-width: 992px) {
  .achievements-section .featured-text {
     padding: 0 0 0 2rem;
@@ -11750,6 +11754,7 @@ body {
 }
 .contact-section .social a:hover {
   color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.15);
 }
 .contact-section .social a:active {
   color: #fff;
