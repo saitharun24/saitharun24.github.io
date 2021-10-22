@@ -11626,6 +11626,10 @@ body {
   padding: 2rem;
 }
 
+.about-hover:hover {
+  transform: scale(1.08);
+}
+
 .courses-section {
   padding: 4rem 0;
 }
