@@ -92,15 +92,57 @@ input:focus::placeholder {
 }
 
 .btn-primary {
-  color: #fff;
+  color: #f0f0f0;
   background-color: #64a19d;
+  position: relative;
   border-color: #64a19d;
+  z-index: 0;
 }
-
+.btn-primary:before {
+  content: '';
+  background: linear-gradient(45deg, #0b0c10, #1f2833, #c5c6c7, #66fcf1, #45a29e, #e3e2df, #e3afbc, #0b0c10);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(7px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 0.25rem
+}
 .btn-primary:hover {
   color: #fff;
   background-color: #558985;
   border-color: #50817e;
+}
+.btn-primary:active {
+  color: #000
+}
+.btn-primary:active:after {
+  background: transparent;
+}
+.btn-primary:hover:before{
+  opacity: 1;
+}
+.btn-primary:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #64a19d;
+  left: 0;
+  top: 0;
+  border-radius: 0.25rem
+}
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
 .btn-primary:disabled, .btn-primary.disabled {
