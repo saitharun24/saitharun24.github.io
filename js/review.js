@@ -1,7 +1,7 @@
 const form = document.getElementById("feedback");
 form.addEventListener('submit', async (event) => {
 	event.preventDefault();
-	const url = "https://api.telegram.org/bot2059098496:AAFaDwkXt4gtGpbIb-jzsgNhaO3TJzyTb2I/sendMessage?chat_id=785778962&text=";
+	const url = "https://api.telegram.org/bot2059098496:AAGA_IgWnv672jYKidbzunPDorU1w0qMg1I/sendMessage?chat_id=785778962&text=";
 	const name = form.elements['name'].value;
 	const msg = form.elements['text'].value;
 	document.getElementById("feedback").reset();
