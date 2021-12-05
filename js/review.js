@@ -8,6 +8,6 @@ form.addEventListener('submit', async (event) => {
 	const message = encodeURIComponent("<b>Portfolio Site</b>" + "\nName : "+ name +"\nMessage : <i>" + msg +"</i>");
 	const URL = url + message + "&parse_mode=html";
 	var xhttp = new XMLHttpRequest();
-	xhttp.open("POST", URL, true);
+	xhttp.open("GET", URL, true);
 	xhttp.send();
 });
