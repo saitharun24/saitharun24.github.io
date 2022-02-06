@@ -1,12 +1,8 @@
-/*!
-* Start Bootstrap - Grayscale v7.0.3 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
+AOS.init({
+    offset: 200, 
+    delay: 100,
+    duration: 400,
+});
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -52,3 +48,6 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+
