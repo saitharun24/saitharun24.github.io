@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:public
+N;CHARSET=UTF-8:A. Sai;Tharun
+FN;CHARSET=UTF-8:A. Sai Tharun
+GENDER:M
+TEL;TYPE=cell:+919025408016
+EMAIL:saitharun24@gmail.com
+URL:https://saitharun24.github.io/
+ADR;TYPE=home:;;Nelson Manikam Road;Chennai;600029;Tamil Nadu;India
+END:VCARD
