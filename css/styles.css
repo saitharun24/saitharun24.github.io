@@ -555,7 +555,10 @@ footer a{color:var(--cyan);text-decoration:none}
   .hero-visual{order:-1}
   .hero-ctas,.hero-social{justify-content:center}
   .hero-tagline{margin-left:auto;margin-right:auto}
-  .about-grid{grid-template-columns:1fr}
+  .about-grid{text-align:center;grid-template-columns:1fr}
+  .about-text{text-align:center}
+  .interests-row{justify-content:center}
+  .about-label{text-align:center}
   .contact-inner{grid-template-columns:1fr}
   .timeline::before{left:15px}
   .timeline-item{grid-template-columns:50px 1fr}
