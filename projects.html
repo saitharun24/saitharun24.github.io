@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projects — A. Sai Tharun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/projects.css" />
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">ST<span>.</span>dev</a>
+  <a href="index.html" class="nav-back">← Back to Portfolio</a>
+</nav>
+
+<!-- PAGE -->
+<div class="page">
+
+  <p class="page-eyebrow">// 04. Projects</p>
+  <h1 class="page-title">Things I've <span class="dim">Built</span></h1>
+  <p class="page-subtitle">A collection of projects across AI, Machine Learning, Computer Vision, App Development, and more. Click any card to explore the full project details.</p>
+  <div class="page-line"></div>
+
+  <!-- FILTER -->
+  <div class="filter-tabs">
+    <button class="filter-tab active" onclick="filterCards('all', this)">All</button>
+    <button class="filter-tab" onclick="filterCards('ai', this)">AI</button>
+    <button class="filter-tab" onclick="filterCards('ml', this)">Machine Learning</button>
+    <button class="filter-tab" onclick="filterCards('cv', this)">Computer Vision</button>
+    <button class="filter-tab" onclick="filterCards('app', this)">App Dev</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="projects-grid" id="projectsGrid">
+
+    <!-- AI Projects -->
+    <div class="project-card" data-category="ai" style="animation-delay:0.45s">
+      <div class="card-banner banner-other">⚙️</div>
+      <div class="card-body">
+        <div class="card-category">AI Projects</div>
+        <div class="card-title">AI Parliment</div>
+        <div class="card-desc">
+          A local reasoning system that thinks before it answers — using De Bono's Six Thinking Hats, structured self-critique, and persistent memory to punch well above its weight class.
+        </div>
+        <div class="tech-pills">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Langchain</span>
+          <span class="tech-pill">ChromaDB</span>
+          <span class="tech-pill">Playwright</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/saitharun24/ai-parliament" target="_blank" class="card-link">
+          View Project <span class="card-arrow">↗</span>
+        </a>
+        <a href="https://github.com/saitharun24?tab=repositories" target="_blank" class="card-github">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="ai" style="animation-delay:0.5s">
+      <div class="card-banner banner-other">⚙️</div>
+      <div class="card-body">
+        <div class="card-category">AI Projects</div>
+        <div class="card-title">LLM Deep Browser</div>
+        <div class="card-desc">
+          A local, GPU-accelerated deep research pipeline powered by local LLMs via Ollama. Given any question, it autonomously plans, searches the web, crawls pages, extracts content, and synthesizes a comprehensive answer — all running on your own hardware with no API keys or cloud dependencies.
+        </div>
+        <div class="tech-pills">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Langchain</span>
+          <span class="tech-pill">ChromaDB</span>
+          <span class="tech-pill">Playwright</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/saitharun24/llm-deep-browser" target="_blank" class="card-link">
+          View Project <span class="card-arrow">↗</span>
+        </a>
+        <a href="https://github.com/saitharun24?tab=repositories" target="_blank" class="card-github">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- ML / DA -->
+    <div class="project-card" data-category="ml" style="animation-delay:0.5s">
+      <div class="card-banner banner-ml">🤖</div>
+      <div class="card-body">
+        <div class="card-category">Machine Learning · Data Analysis</div>
+        <div class="card-title">ML / Data Analysis Projects</div>
+        <div class="card-desc">
+          "Information is the new oil of the 21st century, and analytics is the combustion engine."
+          A collection of data-driven projects exploring patterns, predictions, and insights from real-world datasets.
+        </div>
+        <div class="tech-pills">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">TensorFlow</span>
+          <span class="tech-pill">Pandas</span>
+          <span class="tech-pill">Scikit-learn</span>
+          <span class="tech-pill">NumPy</span>
+          <span class="tech-pill">Matplotlib</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="https://docs.google.com/document/d/1qhv-jP5PryAOzqifTfnsy04I5R6OybGDzpsOScSNAIM/edit?usp=sharing" target="_blank" class="card-link">
+          View Project <span class="card-arrow">↗</span>
+        </a>
+        <a href="https://github.com/saitharun24?tab=repositories" target="_blank" class="card-github">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- MACHINE VISION -->
+    <div class="project-card" data-category="cv" style="animation-delay:0.55s">
+      <div class="card-banner banner-cv">👁</div>
+      <div class="card-body">
+        <div class="card-category">Computer Vision</div>
+        <div class="card-title">Image_Steganography</div>
+        <div class="card-desc">
+          Here we experiment on Steganography concepts to hide a secret message within a larger one in such a way that someone can not know the presence or contents of the hidden message.
+        </div>
+        <div class="tech-pills">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">OpenCV</span>
+          <span class="tech-pill">TensorFlow</span>
+          <span class="tech-pill">Keras</span>
+          <span class="tech-pill">PIL</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="https://github.com/saitharun24/Image_Steganography" target="_blank" class="card-link">
+          View Project <span class="card-arrow">↗</span>
+        </a>
+        <a href="https://github.com/saitharun24?tab=repositories" target="_blank" class="card-github">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- APP DEV -->
+    <div class="project-card" data-category="app" style="animation-delay:0.6s">
+      <div class="card-banner banner-app">📱</div>
+      <div class="card-body">
+        <div class="card-category">App Development</div>
+        <div class="card-title">App Development Projects</div>
+        <div class="card-desc">
+          "There really is an app for everything now."
+          Mobile applications built with Flutter, focusing on great UX, clean architecture, and cross-platform performance.
+        </div>
+        <div class="tech-pills">
+          <span class="tech-pill">Flutter</span>
+          <span class="tech-pill">Dart</span>
+          <span class="tech-pill">Firebase</span>
+          <span class="tech-pill">REST APIs</span>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="https://docs.google.com/document/d/1ZJzuDf_NDhPqHEmJZSKKmWGdw2D4J_a4zL8AHJq7XGs/edit?usp=sharing" target="_blank" class="card-link">
+          View Project <span class="card-arrow">↗</span>
+        </a>
+        <a href="https://github.com/saitharun24?tab=repositories" target="_blank" class="card-github">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- GITHUB BANNER -->
+  <div class="github-banner">
+    <div class="github-banner-text">
+      <h3>Want to see everything?</h3>
+      <p>All my repositories — experiments, forks, and works in progress — live on GitHub.</p>
+    </div>
+    <a href="https://github.com/saitharun24?tab=repositories" target="_blank" class="btn-primary">
+      View All on GitHub ↗
+    </a>
+  </div>
+</div>
+<!-- FOOTER -->
+<footer>
+  <a href="index.html">A. Sai Tharun</a> &nbsp;·&nbsp; © 2026
+</footer>
+<script src="js/projects.js"></script>
+</body>
+</html>
